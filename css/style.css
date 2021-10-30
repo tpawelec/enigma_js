@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #483434;
+}
+
+.enigma__main {
+    min-height: 90vh;
+    height: auto;
+    width: 50%;
+    border-image: url("../assets/frame.jpg")/* source */
+    20 //* slice */    18px 18px 18px 18px //* width */    14px 14px 14px 14px/* outset */    round;
+    margin: auto;
+    transform: translateY(5%);
+    -webkit-transform: translateY(5%);
+    -moz-transform: translateY(5%);
+    -ms-transform: translateY(5%);
+    -o-transform: translateY(5%);
+    background-image: url('../assets/bg.jpg');
+}
+
+.rotors__letter,
+.keyboard__letter,
+.plugboard__letter {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #FFF3E4;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    margin: auto;
+    padding: auto;
+    width: calc(100% * (1/10));
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
