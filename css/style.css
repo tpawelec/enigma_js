@@ -104,12 +104,29 @@ body {
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.72);
 }
 
+.main__plugboard{
+    --mainColor: #000000;
+    --color01: #4e1b6f;
+    --color02: #2c1643;
+    --color03: #2da31a;
+    --color04: #ca6690;
+    --color05: #7d8b96;
+    --color06: #ff6f61;
+    --color07: #007acc;
+    --color08: #6bbb69;
+    --color09: #ffd700;
+    --color10: #c72138;
+    --color11: #e06236;
+    --color12: #304c7a;
+    --color13: #b3df7f;
+}
 .main__plugboard p {
     color: #FFF3E4;
     height: 100px !important;
     position: relative;
 }
 
+.main__plugboard p:before,
 .main__plugboard p:after {
     content: '';
     height: 20px;
@@ -121,7 +138,18 @@ body {
     -o-border-radius: 50%;
     position: absolute;
     border: 2px solid #f0f7ee;
-    background: var(--plug-color, linear-gradient(135deg, #000000 0%, #0a0a0a 11%, #0a0a0a 21%, #4e4e4e 33%, #383838 37%, #1b1b1b 43%, #000000 100%));
-    background: var(--plug-color-webkit, -webkit-linear-gradient(135deg, #000000 0%, #0a0a0a 11%, #0a0a0a 21%, #4e4e4e 33%, #383838 37%, #1b1b1b 43%, #000000 100%));
     bottom: 0;
 }
+
+.main__plugboard p:before {
+    background: linear-gradient(321deg, rgba(0,0,0,0) 0%, rgba(88,88,99,0.8239670868347339) 57%, rgba(177,177,177,0.7819502801120448) 65%, rgba(255,255,255,0.5858718487394958) 73%, rgba(88,88,99,0.6110819327731092) 82%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(321deg, rgba(0,0,0,0) 0%, rgba(88,88,99,0.8239670868347339) 57%, rgba(177,177,177,0.7819502801120448) 65%, rgba(255,255,255,0.5858718487394958) 73%, rgba(88,88,99,0.6110819327731092) 82%, rgba(0,0,0,0) 100%);
+    z-index: 100;
+
+}
+.main__plugboard p:after {
+    
+    background: var(--plugColor, #000000);
+    
+}
+
