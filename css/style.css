@@ -59,7 +59,9 @@ body {
     margin: auto;
 }
 
-[class^="main__"]>div>p {
+.main__plugboard>div>p,
+.main__keyboard>div>p,
+.main__endKeyboard>div>p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +79,77 @@ body {
     cursor: pointer;
 }
 
-.main__rotors p {
+
+.main__rotors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rotors__singleRotor {
+    width: 20%;
+    height: 150px;
+    border: 4px #000000 solid;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.singleRotor__letter {
+    width: 100% !important;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 1px #000000;
+    position: relative;
+}
+
+.singleRotor__letter:nth-child(2):after,
+.singleRotor__letter:nth-child(2):before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    -webkit-box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,0.4);
+    left: 5%;
+}
+
+.singleRotor__letter:nth-child(2):after {
+    top: 150%;
+}
+
+.singleRotor__letter:nth-child(2):before {
+    top: -50%;
+}
+
+.rotors__settingsButton {
+    border: none;
+    width: 50px;
+    height: 200px;
+    background: #000000;
+    color: #ffffff;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: 2em;
+    position: absolute;
+    right: -90px;
+    border-radius: 0 50px 50px 0;
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+
+
+.main__endKeyboard p {
     color: #FFF3E4;
     border: 2px solid #F0F7EE;
     background: linear-gradient(135deg, #000000 0%, #0a0a0a 11%, #0a0a0a 21%, #4e4e4e 33%, #383838 37%, #1b1b1b 43%, #000000 100%);
