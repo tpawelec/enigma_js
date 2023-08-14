@@ -14,6 +14,63 @@
 
 <body>
     <div class="enigma__main">
+        <div class="settingsWindow">
+            <div class="settingsWindow__labels">
+                <p class="labels__label">Rotor on position 1</p>
+                <p class="labels__label">Rotor on position 2</p>
+                <p class="labels__label">Rotor on position 3</p>
+            </div>
+            <div class="settingsWindow__rotorChoice">
+                <select name="rotorPositions" id="rotorPosition1" class="rotorChoice__list">
+                    <option value="Rotor1" selected>Rotor I</option>
+                    <option value="Rotor2">Rotor II</option>
+                    <option value="Rotor3">Rotor III</option>
+                    <option value="Rotor4">Rotor IV</option>
+                    <option value="Rotor5">Rotor V</option>
+                </select>
+                <select name="rotorPositions" id="rotorPosition2" class="rotorChoice__list">
+                    <option value="Rotor1">Rotor I</option>
+                    <option value="Rotor2" selected>Rotor II</option>
+                    <option value="Rotor3">Rotor III</option>
+                    <option value="Rotor4">Rotor IV</option>
+                    <option value="Rotor5">Rotor V</option>
+                </select>
+                <select name="rotorPositions" id="rotorPosition3" class="rotorChoice__list">
+                    <option value="Rotor1">Rotor I</option>
+                    <option value="Rotor2">Rotor II</option>
+                    <option value="Rotor3" selected>Rotor III</option>
+                    <option value="Rotor4">Rotor IV</option>
+                    <option value="Rotor5">Rotor V</option>
+                </select>
+            </div>
+            <div class="settingsWindow__labels">
+                <p class="labels__label">Starting letter</p>
+                <p class="labels__label">Starting letter</p>
+                <p class="labels__label">Starting letter</p>
+            </div>
+            <div class="settingsWindow__rotorChoice">
+                <select name="" id="rotorPosition1" class="rotorChoice__list">
+                </select>
+                <select name="" id="rotorPosition2" class="rotorChoice__list">
+                </select>
+                <select name="" id="rotorPosition3" class="rotorChoice__list">
+                </select>
+            </div>
+            <div class="settingsWindow__reflectorChoice">
+                <span>
+                <input class="reflectorChoice__radio" type="radio" name="Reflector" id="reflectorB">
+                <label for="reflectorB" class="reflectorChoice__label">Reflector B</label>
+                </span>
+                <span>
+                <input class="reflectorChoice__radio" type="radio" name="Reflector" id="reflectorC">
+                <label for="reflectorC" class="reflectorChoice__label">Reflector C</label>
+                </span>
+            </div>
+            <div class="settingsWindow__buttons">
+                <button class="settingsWindow__button" type="button">Apply</button>
+                <button class="settingsWindow__button" type="button">Cancel</button>
+            </div>
+        </div>
         <div class="main__rotors" id="enigmaRotors">
             <button class="rotors__settingsButton" type="button">Settings</button>
         </div>

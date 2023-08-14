@@ -8,6 +8,57 @@ body {
     font-family: 'Courier New', monospace;
 }
 
+.settingsWindow {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 100px;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 1000;
+}
+
+.settingsWindow > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.settingsWindow__labels {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.0em;
+    text-align: center
+}
+
+.rotorChoice__list {
+    width: 100%;
+    margin: 0 20px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.0em;
+}
+
+.reflectorChoice__label {
+    color: #fff;
+    font-size: 1.0em;
+}
+
+
+.settingsWindow__button {
+    border: 2px #575757 dotted;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    height: 45px;
+    width: 35%;
+
+}
 .enigma__main {
     min-height: 90vh;
     height: auto;
